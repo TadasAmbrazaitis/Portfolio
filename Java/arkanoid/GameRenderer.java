@@ -68,7 +68,7 @@ public class GameRenderer extends JPanel implements KeyListener, ActionListener 
             Start:
             for (int i = 0; i < map.map.length; i++) {
                 for (int j = 0; j < map.map[0].length; j++) {
-                    if (map.map[i][j] > 0) {
+                    if (map.map[i][j] == 1) {
                         int brickX = j * map.brickWidth + 50;
                         int brickY = i * map.brickHeight + 50;
 
