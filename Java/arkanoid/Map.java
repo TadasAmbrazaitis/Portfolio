@@ -33,7 +33,7 @@ public class Map {
     public void draw(Graphics2D g) {
         for (int i = 0; i < map.length; i++) {
             for (int j = 0; j < map[0].length; j++) {
-                if (map[i][j] > 0) {
+                if (map[i][j] == 1) {
                     g.setColor(Color.pink);
                     g.fillRect(j * brickWidth + 50, i * brickHeight + 50, brickWidth, brickHeight);
 
