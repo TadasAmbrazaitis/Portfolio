@@ -1,3 +1,3 @@
 # Python Game [Heaven To Hell]
-![](Python/HeavenToHell.gif width="48")
+![](Python/HeavenToHell.gif =250x)
 
