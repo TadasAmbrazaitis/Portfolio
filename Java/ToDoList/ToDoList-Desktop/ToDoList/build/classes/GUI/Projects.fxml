@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox id="AnchorPane" prefHeight="600.0" prefWidth="1000.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ProjectsController">
+    <stylesheets>
+        <URL value="@style.css" />
+    </stylesheets>
+   <children>
+      <VBox maxWidth="-Infinity" prefHeight="600.0" prefWidth="300.0" HBox.hgrow="ALWAYS">
+         <children>
+            <TableView fx:id="projectTable" onMouseClicked="#updateTaskTable" prefHeight="390.0" prefWidth="300.0" VBox.vgrow="ALWAYS">
+              <columns>
+                <TableColumn prefWidth="50.0" text="Project ID" />
+                <TableColumn prefWidth="100.0" text="Project Title" />
+                  <TableColumn prefWidth="50.0" text="Project Manager" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+            <TextField fx:id="paTitle" prefHeight="39.0" prefWidth="400.0" />
+            <Button mnemonicParsing="false" onAction="#addProject" prefHeight="39.0" prefWidth="400.0" text="Add Project" />
+            <TextField fx:id="peTitle" prefHeight="39.0" prefWidth="400.0" />
+            <Button mnemonicParsing="false" onAction="#editProject" prefHeight="39.0" prefWidth="400.0" text="Edit Selected Project Title" />
+            <Button mnemonicParsing="false" onAction="#deleteProject" prefHeight="39.0" prefWidth="400.0" text="Delete Selected Project" />
+         </children>
+      </VBox>
+      <VBox maxWidth="-Infinity" prefHeight="600.0" prefWidth="50.0" />
+      <VBox maxWidth="-Infinity" prefHeight="600.0" prefWidth="300.0">
+         <children>
+            <TableView fx:id="taskTable" prefHeight="439.0" prefWidth="300.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="Task" />
+                <TableColumn prefWidth="75.0" text="Completed" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+            <TextField fx:id="taTitle" prefHeight="39.0" prefWidth="400.0" />
+            <Button mnemonicParsing="false" onAction="#addTask" prefHeight="39.0" prefWidth="400.0" text="Add Task" />
+            <TextField fx:id="teTitle" prefHeight="39.0" prefWidth="422.0" />
+            <Button mnemonicParsing="false" onAction="#editTask" prefHeight="39.0" prefWidth="431.0" text="Edit Selected Task Title" />
+            <Button mnemonicParsing="false" onAction="#completeTask" prefHeight="39.0" prefWidth="400.0" text="Complete Selected Task" />
+            <Button mnemonicParsing="false" onAction="#deleteTask" prefHeight="39.0" prefWidth="707.0" text="Delete Selected Task" />
+         </children>
+      </VBox>
+      <VBox maxWidth="-Infinity" prefHeight="600.0" prefWidth="50.0" HBox.hgrow="ALWAYS" />
+      <VBox maxWidth="-Infinity" prefHeight="600.0" prefWidth="300.0">
+         <children>
+            <TableView fx:id="userTable" prefHeight="483.0" prefWidth="300.0">
+              <columns>
+                <TableColumn prefWidth="100.0" text="Name" />
+                  <TableColumn prefWidth="100.0" text="Surname" />
+                  <TableColumn prefWidth="100.0" text="Title" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+            <TextField fx:id="pId" prefHeight="39.0" prefWidth="400.0" />
+            <Button mnemonicParsing="false" onAction="#addUser" prefHeight="39.0" prefWidth="352.0" text="Add Selected User To Project ID" />
+            <Button mnemonicParsing="false" onAction="#removeUser" prefHeight="39.0" prefWidth="403.0" text="Remove Selected User From Project ID" />
+         </children>
+      </VBox>
+   </children>
+</HBox>
