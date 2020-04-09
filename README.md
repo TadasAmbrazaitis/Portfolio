@@ -1,3 +1,4 @@
 # Python Game [Heaven To Hell]
-<img src="Python/HeavenToHell.gif" alt="drawing" width="200"/>
+<img src="Python/HeavenToHell.gif" width="200"/>
+# Python Game [Heaven To Hell]
 
