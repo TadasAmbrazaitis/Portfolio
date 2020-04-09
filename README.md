@@ -9,7 +9,7 @@ Fall from sunny heaven to burning hell through grass, mud and stone while avoidi
 <img src="Python/HeavenToHell.gif" width="300"/>
 
 # ToDoList Application [Java]
-Fall from sunny heaven to burning hell through grass, mud and stone while avoiding obstacles to earn points.
+Application to manage projects, tasks and team members. With login, registration and CRUD functions using RESTful API, Java FX, MySQL, Tomcat.
 
 <img src="Java/ToDoList/ToDoList1.png" width="500"/>
 <img src="Java/ToDoList/ToDoList2.png" width="500"/>
