@@ -19,4 +19,4 @@ Application to manage projects, tasks and team members. With login, registration
 A web crawler/scraper that automatically visits Delfi.lt, gets headlines, links and small summary, then sorts news by comment count and exports data to csv file.
 Strictly personal script for academic purposes, not intended for commercial use. Script is not uploaded to the repository.
 
-
+<img src="Python/WebScraper.png" width="500"/>
