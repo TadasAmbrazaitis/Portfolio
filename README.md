@@ -4,7 +4,7 @@ Implementation of the classic arcade Arkanoid. Break all the bricks without losi
 <img src="Java/Arkanoid/Arkanoid.gif" width="300"/>
 
 # Heaven To Hell [Python]
-Player falling from sunny heaven to burning hell while avoiding obstacles.
+Fall from sunny heaven to burning hell through grass, mud and stone while avoiding obstacles to earn points.
 
 <img src="Python/HeavenToHell.gif" width="300"/>
 
